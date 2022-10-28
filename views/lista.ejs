@@ -1,0 +1,105 @@
+
+
+<%- include('../views/partials/header'); %>
+
+
+<div class="center">
+    <div class="postFeed">
+        <div class="center">
+            <h1 class="tittle-feed">Blog em Nodejs, Express, MySQL </h1>
+        <form action="/add">
+            <button type="submit" class="btn btn-dark">Criar um post</button>
+        </form>
+        </div>
+        <% for(item of listaDados){ %>
+            <div class="center">
+                <div class="card colorbg mb-3 mt-3" >
+                    <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                        <div class="img-name">
+                          <img class="img-icon" src="https://cdn-icons-png.flaticon.com/512/149/149071.png"  alt=""> 
+                           <h2 class="colorName"><%= item.nomeuser %> </h2>
+                           <h4 id="idpost" class="data-secret"> <%= item.id %> </h4>
+                          
+                           
+                        </div>
+                        <h5 class="card-title"><strong><%= item.titulo %> </strong> </h5>
+                        
+                        
+                        </div>
+                    </div>
+                    <p class="card-text lead"><%= item.textuser %>  </p>
+                    </div>
+
+                    <div class="centerimg">
+                        <img class="imgpost" src="<%= item.imagem %>" alt="">
+                    </div>
+                   
+                   
+                   
+                    <hr >
+                    <div><h3 class="titulo-div-coment"><i class="bi bi-chat-right-fill"></i>comentarios</h3></div>
+                    <hr>   
+                    <div class="comentarios">
+                    
+
+
+                        
+
+                    </div>
+                    
+                    <form  class="form-coment" action="/comment/<%= item.id %>" method="POST">
+                      
+
+                        <h4 >Deixe um comentario</h4>
+                   
+                     
+                        <input type="text" name="nomecomment" class="nomecomment" placeholder="insira seu nome aqui" required> 
+                        <input type="text" name="url" class="url" placeholder="insira uma url de alguma imagem" >
+                        <input type="text" name="textcomment" class="textcomment" placeholder="insira seu comentario " required> 
+                       
+                        <input type="file" name="image_file" id="image_file" />
+                         
+    
+                        <button class="button" type="submit"> comentar
+                        </button>
+    
+                    </form>
+                      
+               
+
+                </div>
+
+
+              
+         
+                
+        
+            </div>
+
+            
+        
+        <% } %>
+
+        
+
+
+
+
+        
+
+    </div>
+  
+</div>
+
+
+    <script src="front.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+
+</html>

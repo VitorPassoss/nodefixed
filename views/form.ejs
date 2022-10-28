@@ -1,0 +1,51 @@
+
+<%- include('../views/partials/header'); %>
+ 
+    <div class="divformcenter">
+        <div class="formdiv">
+
+            <% if(postagem.id) { %> 
+            <form action="/edit/<%= postagem.id %>" method="POST">
+            <% }else{  %> 
+            <form action="/add" method="POST">
+            <% } %>     
+
+                <div class="form-group">
+                <label for="exampleInputEmail1">Seu Nome</label>
+                <input  required type="text" name="nomeUser" class="form-control" id="exampleInputEmail1" placeholder="Seu Nome" value="<%= postagem.nomeUser %>">
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Titulo</label>
+                <input required type="text" class="form-control" id="exampleInputPassword1" placeholder="titulo da postagem" name="titulo" value="<%= postagem.titulo %>"> 
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">postagem</label>
+                    <textarea class="form-control"  name="post" 
+
+                                                                                
+                    rows="3" ><%= postagem.textUser %></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Insira a url de uma imagem</label>
+                    <input  type="text" class="form-control" id="exampleInputPassword1" placeholder="insira aqui" name="imagem" value="<%= postagem.imagem %>"> 
+                    </div>
+
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+

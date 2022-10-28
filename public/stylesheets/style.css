@@ -1,0 +1,346 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+body {
+ 
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #18191a !important;
+  color: white;
+  
+}
+
+.data-secret{
+  color: #242526;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #18191a;
+  
+ 
+}
+
+
+
+.titulo-div-coment{
+text-align: center;
+
+
+
+}
+
+
+
+.bi-chat-right-fill{
+  margin: 10px;
+  font-size: 20px;
+}
+
+.formdiv{
+  color: white;
+  width: 40%;
+  background-color:#242526;
+  padding: 40px;
+  border-radius: 25px;
+  
+}
+
+.colorName{
+  color:white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.postFeed{
+  
+  width: 50%;
+  height: 100%;
+  background-color: #18191a;
+
+}
+
+.colorbg{
+  background-color: #242526 !important;
+  color: white;
+  
+}
+.card{
+  max-width: 900px; 
+  width: 100%; 
+  height: 100%;
+  margin-top: 0px;
+  padding:10px ;
+
+
+
+}
+
+.color-bg{
+  background-color: #474747 !important;
+  
+}
+
+.navflex{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.card-title{
+  text-align: left;
+  padding-top: 10px;
+  
+   
+}
+.card-text{
+  font-size: 14px;
+  bottom: 12px;
+  position: relative;
+  left: 7px;
+ 
+  
+}
+
+.img-name{
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.divformcenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.tittle-feed{
+  color: white;
+  font-size: 35px;
+  display: none;
+  
+}
+
+.options{
+  position: absolute;
+  left: 85%;
+}
+
+.options a{
+  font-size: 20px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.btn{
+  margin-top: 70px;
+}
+
+.centerimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* From uiverse.io by @Yaseen549 */
+.button {
+  color: #ecf0f1;
+  font-size: 17px;
+  background-color: #212121;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 6px 0px #787878;
+  transition: all 50ms;
+  width: 120px;
+  margin-top: 10px;
+ }
+ 
+ .button:active {
+  box-shadow: 0px 2px 0px #787878;
+  position: relative;
+  top: 2px;
+ }
+
+.form-coment{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242526;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+  position: relative;
+  top: -0px;
+}
+
+.textcomment{
+  height: 100%;
+  min-height: 50px;
+  width: 60%;
+  margin: 10px;
+  border: none !important;
+  border-radius: 10px;
+  background-color: #18191a;
+  color: white;
+}
+
+
+.nomecomment{
+  height: 40px;
+  width: 60%;
+  margin: 10px;
+  border: none !important; 
+  border-radius: 10px;
+  background-color: #18191a;
+  color: white;
+}
+
+.url{
+  height: 40px;
+  width: 60%;
+  margin: 10px;
+  border: none !important;
+  border-radius: 10px;
+  background-color: #18191a;
+  color: white;
+}
+
+.imgpost{
+  width: 60%;
+  padding: 10px;
+  border-radius: 30px !important;
+  
+}
+
+
+
+.imgcoment{
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px !important;
+  
+}
+
+.textcoment{
+  color: #474747;
+  padding-left: 30px;
+}
+
+
+.img-icon{
+  width: 4%;
+   height: 28px; 
+   border-radius: 100%;
+}
+.coment{
+  width: 100%;
+  padding: 5px 30px 2px 30px;
+  color: white !important;
+}
+
+.comentarios li {
+  list-style-type: none;
+
+  background-color: #18191a;
+  color: white !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 25px;
+  padding-top: 20px;
+  
+}
+
+.comentarios{
+  font-size: 18px;
+  color: white;
+  border-radius: 25px;
+  
+}
+
+.usercoment{
+  color: #474747;
+  padding-left: 30px;
+  
+}
+
+
+
+
+
+@media (max-width: 576px){
+
+.form-coment{
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #242526;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+  .formdiv{
+    color: white;
+    width: 100%;
+    background-color:#242526;
+    padding: 40px;
+    border-radius: 25px;
+    
+  }
+  .options{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 80%;
+    top: 1%;
+  }
+  .btn{
+    margin-top: 80px;
+  }
+  
+  .postFeed{
+  
+    width: 90%;
+    height: 100vh;
+    background-color: #18191a;
+  
+  }
+  .img-icon{
+    width: 6%;
+     height: 25px; 
+     border-radius: 100%;
+  }
+
+  
+  .card-title{
+    text-align: left;
+    padding-top: 10px;
+    font-size: 15px;
+     
+  }
+
+
+  .lead{
+    font-size: 14px !important;
+  }
+
+}
