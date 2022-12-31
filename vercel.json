@@ -1,12 +1,11 @@
 {
-    "version": 2,
     "builds": [
-      {
-        "src": "package.json",
-        "use": "vercel-sapper",
-        "config": {
-            "build": true
+        {
+          "src": "package.json",
+            "use": "vercel-sapper",
+            "config": {
+             "include": ["posts"]
+          }
         }
-      }
-    ]
-  }
+      ]
+    }
